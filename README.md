@@ -1,9 +1,9 @@
 ![Redde](https://www.reddeonline.com/assets/img/reddes-logo.png)
-# redde-java-sdk
+# redde-java-sdk (Beta)
 A Java SDK built around the Redde REST API that allows merchants to receive, send, check transaction status, and perform lots of payment transactions.
 [![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0&x2=0)](https://github.com/wigalsolutionsltd/redde-java-sdk)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/wigalsolutionsltd/redde-php-sdk/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/wigalsolutionsltd/redde-java-sdk)
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://reddeonline.com)
 
 Before you can have access to APIs you need to register and create an [Account](https://app.reddeonline.com/register). Header for all request should have {"apikey": "string"}: and this API key will be sent to merchant when their app configuration is setup for them by Wigal.
