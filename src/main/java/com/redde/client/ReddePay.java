@@ -1,7 +1,7 @@
 package com.redde.client;
 
 import com.google.gson.Gson;
-import com.redde.client.model.ReddeApiClient;
+import com.redde.client.model.ReddeApiRequest;
 import com.redde.client.model.ReddeTransaction;
 
 
@@ -13,7 +13,7 @@ public class ReddePay
 {
 
     //Method to receive money by passing api and object
-    public String receiveMoney(ReddeApiClient api,ReddeTransaction receiveObject) {
+    public String receiveMoney(ReddeApiRequest api,ReddeTransaction receiveObject) {
             Gson recJson = new Gson();
             String gsonRecieve = recJson.toJson(receiveObject);
 
@@ -27,7 +27,7 @@ public class ReddePay
     }
     
     //Method to send money by passing api and object
-    public String sendMoney(ReddeApiClient api,ReddeTransaction sendObject) {
+    public String sendMoney(ReddeApiRequest api,ReddeTransaction sendObject) {
             Gson recJson = new Gson();
             String gsonSend = recJson.toJson(sendObject);
             
