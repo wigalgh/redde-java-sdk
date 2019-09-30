@@ -1,6 +1,6 @@
 [//]: #![Redde](https://www.reddeonline.com/assets/img/redde-logo.png)
 
-<img src="https://www.reddeonline.com/assets/img/redde-logo.png" data-canonical-src="https://www.reddeonline.com/assets/img/redde-logo.png" width="200" height="40" />
+<img src="https://www.reddeonline.com/assets/img/redde-logo.png" data-canonical-src="https://www.reddeonline.com/assets/img/redde-logo.png" width="250" height="80" />
 
 # redde-java-sdk 
 
@@ -39,6 +39,7 @@ Create variables and pass them as parameter in an instance of ReddeApiClient wit
 ```java
 String apikey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //Your Api Key
 String appid = "XX"; //Your App Id
+
 ```
 
 ```java
