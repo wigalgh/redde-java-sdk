@@ -1,6 +1,6 @@
 [//]: #![Redde](https://www.reddeonline.com/assets/img/redde-logo.png)
 
-<img src="https://www.reddeonline.com/assets/img/redde-logo.png" data-canonical-src="https://www.reddeonline.com/assets/img/redde-logo.png" width="250" height="80" />
+<img src="https://www.reddeonline.com/assets/img/redde-logo.png" data-canonical-src="https://www.reddeonline.com/assets/img/redde-logo.png" width="200" height="80" />
 
 # redde-java-sdk 
 
