@@ -2,7 +2,7 @@
 # redde-java-sdk 
 
 [![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0&x2=0)](https://github.com/wigalsolutionsltd/redde-java-sdk)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/wigalsolutionsltd/redde-java-sdk)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/wigalsolutionsltd/redde-java-sdk)
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://www.reddeonline.com/)
 ---------------------------------------------------------------------------
