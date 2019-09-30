@@ -12,10 +12,15 @@ import com.redde.client.model.ReddeTransaction;
 public class ReddePay 
 {
 
-    //Method to receive money by passing api and object
+    /**
+     * Method to receive money by passing api and object
+     * @param api
+     * @param receiveObject
+     * @return response
+     */
     public String receiveMoney(ReddeApiRequest api,ReddeTransaction receiveObject) {
-            Gson recJson = new Gson();
-            String gsonRecieve = recJson.toJson(receiveObject);
+            Gson receiveJson = new Gson();
+            String gsonRecieve = receiveJson.toJson(receiveObject);
 
             try {
                 String response = api.post("receive", gsonRecieve);
@@ -26,16 +31,21 @@ public class ReddePay
 
     }
     
-    //Method to send money by passing api and object
+    /**
+     * Method to send money by passing api and object
+     * @param api
+     * @param sendObject
+     * @return response
+     */
     public String sendMoney(ReddeApiRequest api,ReddeTransaction sendObject) {
-            Gson recJson = new Gson();
-            String gsonSend = recJson.toJson(sendObject);
+            Gson sendJson = new Gson();
+            String gsonSend = sendJson.toJson(sendObject);
             
             try {
                 String response = api.post("cashout", gsonSend);
                 return response;
             } catch(Exception e) {
-                return "Error whiles trying to sending money";
+                return "Error whiles trying to send money";
             }
 
     }
