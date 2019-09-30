@@ -34,7 +34,7 @@ Usage
 Maven and Gradle repository will be ready soon
 
 
-Create an api variable with your API key and App ID which will be provided to you by the Redde Team:
+Create variables and pass them as parameter in an instance of ReddeApiClient with your API key and App ID which will be provided to you by the Redde Team:
 
 ```java
 String apikey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //Your Api Key
