@@ -1,4 +1,7 @@
-![Redde](https://www.reddeonline.com/assets/img/redde-logo.png =200x50)
+[//]: #![Redde](https://www.reddeonline.com/assets/img/redde-logo.png)
+
+<img src="https://www.reddeonline.com/assets/img/redde-logo.png" data-canonical-src="https://www.reddeonline.com/assets/img/redde-logo.png" width="200" height="40" />
+
 # redde-java-sdk 
 
 [![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0&x2=0)](https://github.com/wigalsolutionsltd/redde-java-sdk)
@@ -31,10 +34,11 @@ Usage
 Maven and Gradle repository will be ready soon
 
 
-Create an api object with your API key and App ID which will be provided to you by the Redde Team:
+Create an api variable with your API key and App ID which will be provided to you by the Redde Team:
 
 ```java
-
+String apikey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //Your Api Key
+String appid = "XX"; //Your App Id
 ```
 
 ```java
