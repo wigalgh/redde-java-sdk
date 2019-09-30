@@ -7,6 +7,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+/**
+ * ReddeApiRequest class
+ */
 public class ReddeApiRequest {
 
   private static final String BASE_URI = "https://api.reddeonline.com/v1";
@@ -19,12 +22,22 @@ public class ReddeApiRequest {
     //Using the OkHttpClient object
     OkHttpClient client = new OkHttpClient();
 
+    /**
+     * Set apikey and appid 
+     * @param apikey
+     * @param appid
+     */
     public ReddeApiRequest(final String apikey, final String appid) {
         this.apikey = apikey;
         this.appid = appid;
     }
 
-    //Get request method
+    /**
+     * Get request method
+     * @param url
+     * @return Response
+     * @throws IOException
+     */
     public String get(String url) throws IOException {
         
         url = BASE_URI + "/" + url;
@@ -40,7 +53,14 @@ public class ReddeApiRequest {
 
       }
 
-    //Post request method
+
+    /**
+     * Post request method
+     * @param url
+     * @param json
+     * @return Response
+     * @throws IOException
+     */
     public String post(String url, String json) throws IOException {
       url = BASE_URI + "/" + url;
         RequestBody body = RequestBody.create(JSON, json);

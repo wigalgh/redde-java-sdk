@@ -6,123 +6,254 @@ package com.redde.client.model;
 
 public class ReddeTransaction {
 
-    public static enum Status {OK, PENDING, PROGRESS, PAID, FAILED}
+    /**
+     *  private member variable amount
+     */
+    private BigDecimal amount;
 
-    private Double amount;
+    /**
+     *  private member variable appid
+     */
     private int appid;
+
+    /**
+     *  private member variable clientreference
+     */
     private String clientreference;
+
+    /**
+     *  private member variable clienttransid
+     */
     private String clienttransid;
+
+    /**
+     *  private member variable description
+     */
     private String description;
+
+    /**
+     *  private member variable nickname
+     */
     private String nickname;
+
+    /**
+     *  private member variable paymentoption
+     */
     private String paymentoption;
+
+    /**
+     *  private member variable vouchercode
+     */
     private String vouchercode;
+
+    /**
+     *  private member variable walletnumber
+     */
     private String walletnumber;
 
-    public Double getAmount() {
+    /**
+     * 
+     * @return BigDecimal amount
+     */
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    /**
+     * 
+     * @param amount
+     */
+    public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
-    public ReddeTransaction amount(Double amount) {
+    /**
+     * 
+     * @param amount
+     * @return
+     */
+    public ReddeTransaction amount(BigDecimal amount) {
         this.amount = amount;
         return this;
     }
 
+    /**
+     * 
+     * @return
+     */
     public int getAppId() {
         return appid;
     }
 
+    /**
+     * 
+     * @param appid
+     */
     public void setAppId(int appid) {
         this.appid = appid;
     }
 
+    /**
+     * 
+     * @param appid
+     * @return
+     */
     public ReddeTransaction appid(int appid) {
         this.appid = appid;
         return this;
     }
 
-    //Client Reference ID
+    /**
+     * 
+     * @return
+     */
     public String getClientReference() {
         return clientreference;
     }
 
+    /**
+     * 
+     * @param clientreference
+     */
     public void setClientReference(String clientreference) {
         this.clientreference = clientreference;
     }
 
+    /**
+     * 
+     * @param clientreference
+     * @return
+     */
     public ReddeTransaction clientreference(String clientreference) {
         this.clientreference = clientreference;
         return this;
     }
 
-    //Client Transaction ID
+    /**
+     * 
+     * @return
+     */
     public String getClientTransId() {
         return clienttransid;
     }
 
+    /**
+     * 
+     * @param clienttransid
+     */
     public void setClientTransId(String clienttransid) {
         this.clienttransid = clienttransid;
     }
 
+    /**
+     * 
+     * @param clienttransid
+     * @return
+     */
     public ReddeTransaction clienttransid(String clienttransid) {
         this.clienttransid = clienttransid;
         return this;
     }
 
-    //Transaction description
+    /**
+     * 
+     * @return
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * 
+     * @param description
+     */
     public void setDescription(String description) {
         this.description = description;
     }
 
+    /**
+     * 
+     * @param description
+     * @return
+     */
     public ReddeTransaction description(String description) {
         this.description = description;
         return this;
     }
 
-    //Merchant nickname
+    /**
+     * 
+     * @return
+     */
     public String getNickname() {
         return nickname;
     }
 
+    /**
+     * 
+     * @param nickname
+     */
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
 
+    /**
+     * 
+     * @param nickname
+     * @return
+     */
     public ReddeTransaction nickname(String nickname) {
         this.nickname = nickname;
         return this;
     }
 
-    //Payment Option 
+    /**
+     * 
+     * @return
+     */
     public String getPaymentOption() {
         return paymentoption;
     }
 
+    /**
+     * 
+     * @param paymentoption
+     */
     public void setPaymentOption(String paymentoption) {
         this.paymentoption = paymentoption;
     }
 
+    /**
+     * 
+     * @param paymentoption
+     * @return
+     */
     public ReddeTransaction paymentoption(String paymentoption) {
         this.paymentoption = paymentoption;
         return this;
     }
 
-    //Voucher Code
+    /**
+     * 
+     * @return
+     */
     public String getVoucherCode() {
         return vouchercode;
     }
 
+    /**
+     * 
+     * @param vouchercode
+     */
     public void setVoucherCode(String vouchercode) {
         this.vouchercode = vouchercode;
     }
 
+    /**
+     * 
+     * @param vouchercode
+     * @return
+     */
     public ReddeTransaction vouchercode(String vouchercode) {
         this.vouchercode = vouchercode;
         return this;
@@ -142,7 +273,9 @@ public class ReddeTransaction {
         return this;
     }
 
-    // Creating toString 
+    /**
+     *  Creating toString 
+     */
     @Override
     public String toString() 
     { 
