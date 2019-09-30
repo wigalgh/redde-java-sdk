@@ -1,18 +1,15 @@
-![Redde](https://www.reddeonline.com/assets/img/redde-logo.png)
+![Redde](https://www.reddeonline.com/assets/img/redde-logo.png =200x50)
 # redde-java-sdk 
-===
 
 [![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0&x2=0)](https://github.com/wigalsolutionsltd/redde-java-sdk)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/wigalsolutionsltd/redde-java-sdk)
-[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://reddeonline.com)
-
-===
+[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://www.reddeonline.com/)
+---------------------------------------------------------------------------
 
 
 A Java SDK built around the Redde REST API that allows merchants to receive, send, check transaction status, and perform lots of payment transactions.
 
-===
 
 Before you can have access to APIs you need to register and create an [Account](https://app.reddeonline.com/register). Header for all request should have {"apikey": "string"}: and this API key will be sent to merchant when their app configuration is setup for them by Wigal.
 
@@ -56,39 +53,39 @@ Examples
 To use the API to recieve money from a customer, the receiveMoney() method will be used with a simple object made with chained methods and passing it as a parameter.
 
 ```java
-		/** 
-         * An example object for passing parameters to receive money
-         *
-        */
-        receive.amount(1.0) //The amount to receive
-        .appid(XX)  //App ID given to you by Wigal
-        .clientreference("wwwe435345") //reference for transaction made
-        .clienttransid("435") //ID for transaction made
-        .description("payment subscription") //Description for payment to recieve
-        .nickname("wigal") //Example name for receiver
-        .paymentoption("MTN") // MTN | VODAFONE | AIRTELTIGO  payment options available
-        .walletnumber("024XXXXXXX") //Walletnumber of reciever
-        //.vouchercode("") // use this if you are receiving from vodafone
-        .toString(); 
+/** 
+ * An example object for passing parameters to receive money
+ *
+*/
+receive.amount(1.0) //The amount to receive
+.appid(XX)  //App ID given to you by Wigal
+.clientreference("wwwe435345") //reference for transaction made
+.clienttransid("435") //ID for transaction made
+.description("payment subscription") //Description for payment to recieve
+.nickname("wigal") //Example name for receiver
+.paymentoption("MTN") // MTN | VODAFONE | AIRTELTIGO  payment options available
+.walletnumber("024XXXXXXX") //Walletnumber of reciever
+//.vouchercode("") // use this if you are receiving from vodafone
+.toString(); 
 ```
 
 ### Sending money to Customer or Client
 To use the API to send money to a customer, the sendMoney() method will be used with a simple object made with chained methods and passing it as a parameter.
 
 ```java
-   		/** 
-         * An example object for passing parameters to receive money
-         *
-        */
-        send.amount(1.0) //The amount to send
-        .appid(XX)  //App ID given to you by Wigal
-        .clientreference("wwwe435345") //reference for transaction made
-        .clienttransid("435") //ID for transaction made
-        .description("payment subscription") //Description for payment to send
-        .nickname("wigal") //Example name for sender
-        .paymentoption("MTN") // MTN | VODAFONE | AIRTELTIGO  payment options available
-        .walletnumber("024XXXXXXX") //Walletnumber of sender
-        .toString(); 
+/** 
+* An example object for passing parameters to receive money
+*
+*/
+send.amount(1.0) //The amount to send
+.appid(XX)  //App ID given to you by Wigal
+.clientreference("wwwe435345") //reference for transaction made
+.clienttransid("435") //ID for transaction made
+.description("payment subscription") //Description for payment to send
+.nickname("wigal") //Example name for sender
+.paymentoption("MTN") // MTN | VODAFONE | AIRTELTIGO  payment options available
+.walletnumber("024XXXXXXX") //Walletnumber of sender
+.toString(); 
 
 ```
 
@@ -97,21 +94,21 @@ Most APIs implement callbacks for easy tracking of api transactions so we've spa
 simple for you to use. Check it out
 
 ```java
-            //Pass your implemented callback url as a parameter for the callbackUrl method
-			String callback = notification.callbackUrl("http://example.com/reddestatus/paid.php"); //or something url callable. 
-            status = notification.statusObject(callback);
-            
-            //shout(status.toString());
+//Pass your implemented callback url as a parameter for the callbackUrl method
+String callback = notification.callbackUrl("http://example.com/reddestatus/paid.php"); //or something url callable. 
+status = notification.statusObject(callback);
 
-            /*
-             *shout is a simple function created around System.out.println
-             */
+//shout(status.toString());
 
-            shout("Status is " +  status.getStatus());
-            shout("Reason is " +  status.getReason());
-            shout("Client Transacion Id is " +  status.getClientTransId());
-            shout("Transaction ID is " +  status.getTransactionId());
-            shout("Status Date " +  status.getStatusDate());
+/*
+ *shout is a simple function created around System.out.println
+ */
+
+shout("Status is " +  status.getStatus());
+shout("Reason is " +  status.getReason());
+shout("Client Transacion Id is " +  status.getClientTransId());
+shout("Transaction ID is " +  status.getTransactionId());
+shout("Status Date " +  status.getStatusDate());
 
 ```
 
